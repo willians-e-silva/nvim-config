@@ -3,6 +3,5 @@ return {
   version = '*',
   opts = {
     direction = 'float',
-    shell = '/bin/fish',
   },
 }
