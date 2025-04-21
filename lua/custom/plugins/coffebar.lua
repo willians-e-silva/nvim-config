@@ -8,6 +8,9 @@ return {
       '~/Documentos/projects/front-v2',
       '~/Documentos/projects/node_api',
       '~/Documentos/projects/websocket',
+      '/home/will/Projects/go/',
+      '/home/will/Projects/java/',
+      '/home/will/Projects/treina-ai//',
     },
     picker = {
       type = 'telescope', -- or "fzf-lua"

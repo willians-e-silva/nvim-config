@@ -3,5 +3,7 @@ return {
   version = '*',
   opts = {
     direction = 'float',
+    terminal = 'foot', -- Define o terminal foot
+    shell = '/bin/fish',
   },
 }

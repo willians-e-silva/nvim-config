@@ -18,3 +18,4 @@ vim.keymap.set('n', '<leader>p', ':NeovimProjectDiscover alphabetical_name<CR>',
 
 vim.api.nvim_set_keymap('n', 'm', ':BufferLineCycleNext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'n', ':BufferLineCyclePrev<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'q', ':bdelete<CR>', { noremap = true, silent = true })
