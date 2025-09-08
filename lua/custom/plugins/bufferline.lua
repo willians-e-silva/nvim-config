@@ -35,5 +35,29 @@ return {
         },
       },
     }
+
+    -- 🎯 Atalhos principais do bufferline (parecidos com cokeline)
+    local map = vim.keymap.set
+    local opts = { noremap = true, silent = true }
+
+    -- Navegar entre buffers
+    map('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', opts)
+    map('n', '<S-Tab>', '<Cmd>BufferLineCyclePrev<CR>', opts)
+
+    -- Reordenar buffers
+    map('n', '<leader>bp', '<Cmd>BufferLineMovePrev<CR>', opts)
+    map('n', '<leader>bn', '<Cmd>BufferLineMoveNext<CR>', opts)
+
+    -- Fechar buffers
+    map('n', '<leader>bc', '<Cmd>bdelete<CR>', opts)
+    map('n', '<leader>bo', '<Cmd>BufferLineCloseOthers<CR>', opts)
+
+    -- Escolher buffer pelo número (1–9)
+    for i = 1, 9 do
+      map('n', '<leader>' .. i, '<Cmd>BufferLineGoToBuffer ' .. i .. '<CR>', opts)
+    end
+
+    -- Modo "pick buffer" (escolher pela letra mostrada)
+    map('n', '<leader>bb', '<Cmd>BufferLinePick<CR>', opts)
   end,
 }

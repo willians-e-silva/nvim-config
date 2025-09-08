@@ -18,4 +18,8 @@ return {
       extended = false,
     },
   },
+  keys = {
+    { '<leader>/', '<Plug>(comment_toggle_linewise_current)', desc = 'Toggle comment line' },
+    { '<leader>?', '<Plug>(comment_toggle_blockwise_current)', desc = 'Toggle comment block' },
+  },
 }

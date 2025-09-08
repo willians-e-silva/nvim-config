@@ -3,14 +3,10 @@ return {
   opts = {
     projects = { -- define project roots
       '~/.config/nvim',
-      '~/Documentos/projects/easy-rx3',
-      '~/Documentos/projects/easy-rx-3-front',
-      '~/Documentos/projects/front-v2',
-      '~/Documentos/projects/node_api',
-      '~/Documentos/projects/websocket',
-      '/home/will/Projects/go/',
-      '/home/will/Projects/java/',
-      '/home/will/Projects/treina-ai//',
+      '/home/relicario/Projects/go',
+      '/home/relicario/Projects',
+      '/home/relicario/Projects/campfire-api/',
+      '/home/relicario/Projects/maestro',
     },
     picker = {
       type = 'telescope', -- or "fzf-lua"
